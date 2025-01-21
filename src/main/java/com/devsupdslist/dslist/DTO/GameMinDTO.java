@@ -3,7 +3,7 @@ package com.devsupdslist.dslist.DTO;
 import com.devsupdslist.dslist.entities.Game;
 import org.springframework.beans.BeanUtils;
 
-public class GameDTO {
+public class GameMinDTO {
 
     private Long id;
     private String title;
@@ -15,7 +15,7 @@ public class GameDTO {
     private String shortDescription;
     private String longDescription;
 
-    public GameDTO(Game entity) {
+    public GameMinDTO(Game entity) {
         BeanUtils.copyProperties(entity, this);
     }
 
