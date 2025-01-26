@@ -1,13 +1,10 @@
-Intensivão Java com Java e Spring.
-lib Maven
-properties/ entidades/ORM
-seed dos games
-GameMinDTO, GameRepository, GameService, GameController
+O projeto utiliza as seguintes ferramentas e boas práticas:
 
-- Conceitos: Sistemas web e recursos, cliente/servidor, http, json, padrão Rest para API web
-- Estruturação de Projeto Spring Rest
-- Entidades e ORM
-- DataBase seeding
-- Padrão camadas
-- Controller, service, repository
-- Padrao DTO
+Java e Spring Boot: Utilizados para desenvolvimento do backend.
+Maven: Gerenciamento de dependências.
+ORM (Object-Relational Mapping): Para mapeamento de entidades.
+H2 e SQL: Para banco de dados.
+Padrão de camadas: Separação do código em camadas Controller, Service e Repository.
+DTO (Data Transfer Object): Para transferência de dados.
+Conceitos de sistemas web: Incluindo cliente/servidor, HTTP, JSON, e padrão REST para API web.
+Database seeding: Inicialização do banco de dados com dados de exemplo.
