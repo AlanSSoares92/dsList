@@ -19,7 +19,8 @@ public class GameController {
 
     @GetMapping
     public List<GameMinDTO> getAll(){
-       return service.findAll();
+       List<GameMinDTO> result = service.findAll();
+       return result;
     }
     @GetMapping(value = "/{id}")
     public GameDTO getById(@PathVariable Long id){
