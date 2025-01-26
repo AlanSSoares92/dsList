@@ -1,6 +1,7 @@
 package com.devsupdslist.dslist.DTO;
 
 import com.devsupdslist.dslist.entities.Game;
+import com.devsupdslist.dslist.projections.GameMinProjection;
 import lombok.*;
 import org.springframework.beans.BeanUtils;
 public class GameMinDTO {
@@ -16,6 +17,12 @@ public class GameMinDTO {
 
     public GameMinDTO() {
     }
+
+    public GameMinDTO(GameMinProjection gameMinProjection) {
+        BeanUtils.copyProperties(gameMinProjection, this);
+
+    }
+
 
     public Long getId() {
         return id;
