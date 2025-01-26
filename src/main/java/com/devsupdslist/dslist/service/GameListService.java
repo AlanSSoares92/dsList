@@ -22,5 +22,12 @@ public class GameListService {
         List<GameList> ent = gameListRepository.findAll();
         return ent.stream().map(GameListDTO::new).toList();
     }
+    @Transactional(readOnly = true)
+    public GameListDTO findById(Long id){
+        GameList ent = gameListRepository.findById(id).get();
+        return new GameListDTO(ent);
+    }
+
+
 
 }
